@@ -1,9 +1,8 @@
-'use strict';
-var test = require('ava');
-var isBuiltinModule = require('./');
+import test from 'ava';
+import m from './';
 
-test(function (t) {
-	t.assert(isBuiltinModule('fs'));
-	t.assert(isBuiltinModule('console'));
-	t.end();
+test(t => {
+	t.true(m('fs'));
+	t.true(m('console'));
+	t.false(m('unicorn')); // :(
 });

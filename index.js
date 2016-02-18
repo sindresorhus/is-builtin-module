@@ -5,5 +5,9 @@ module.exports = function (str) {
 		throw new TypeError('Expected a string');
 	}
 
-	return require.resolve(str).indexOf(require('path').sep) === -1;
+	try {
+		return require.resolve(str).indexOf(require('path').sep) === -1;
+	} catch (e) {
+		return false;
+	}
 };

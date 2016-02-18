@@ -34,9 +34,6 @@
     "check",
     "match"
   ],
-  "dependencies": {
-    "builtin-modules": "^1.0.0"
-  },
   "devDependencies": {
     "ava": "*"
   }

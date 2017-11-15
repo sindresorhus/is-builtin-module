@@ -1,10 +1,12 @@
 'use strict';
-var builtinModules = require('builtin-modules');
+const builtinModules = require('builtin-modules');
 
-module.exports = function (str) {
-	if (typeof str !== 'string') {
+const moduleSet = new Set(builtinModules);
+
+module.exports = moduleName => {
+	if (typeof moduleName !== 'string') {
 		throw new TypeError('Expected a string');
 	}
 
-	return builtinModules.indexOf(str) !== -1;
+	return moduleSet.has(moduleName);
 };

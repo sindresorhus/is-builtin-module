@@ -6,20 +6,20 @@
 ## Install
 
 ```
-$ npm install --save is-builtin-module
+$ npm install is-builtin-module
 ```
 
 
 ## Usage
 
 ```js
-var isBuiltinModule = require('is-builtin-module');
+const isBuiltinModule = require('is-builtin-module');
 
 isBuiltinModule('fs');
 //=> true
 
 isBuiltinModule('unicorn');
-//=> false :(
+//=> false
 ```
 
 
@@ -30,4 +30,4 @@ isBuiltinModule('unicorn');
 
 ## License
 
-MIT © [Sindre Sorhus](http://sindresorhus.com)
+MIT © [Sindre Sorhus](https://sindresorhus.com)

@@ -1,8 +1,8 @@
 import test from 'ava';
-import m from '.';
+import isBuiltinModule from '.';
 
-test(t => {
-	t.true(m('fs'));
-	t.true(m('console'));
-	t.false(m('unicorn'));
+test('main', t => {
+	t.true(isBuiltinModule('fs'));
+	t.true(isBuiltinModule('console'));
+	t.false(isBuiltinModule('unicorn'));
 });

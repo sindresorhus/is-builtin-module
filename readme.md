@@ -28,6 +28,14 @@ isBuiltinModule('unicorn');
 - [builtin-modules](https://github.com/sindresorhus/builtin-modules) - List of the Node.js builtin modules
 
 
-## License
+---
 
-MIT © [Sindre Sorhus](https://sindresorhus.com)
+<div align="center">
+	<b>
+		<a href="https://tidelift.com/subscription/pkg/npm-is-builtin-module?utm_source=npm-is-builtin-module&utm_medium=referral&utm_campaign=readme">Get professional support for this package with a Tidelift subscription</a>
+	</b>
+	<br>
+	<sub>
+		Tidelift helps make open source sustainable for maintainers while giving companies<br>assurances about security, maintenance, and licensing for their dependencies.
+	</sub>
+</div>

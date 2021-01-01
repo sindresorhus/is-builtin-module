@@ -1,4 +1,4 @@
-# is-builtin-module [![Build Status](https://travis-ci.org/sindresorhus/is-builtin-module.svg?branch=master)](https://travis-ci.org/sindresorhus/is-builtin-module)
+# is-builtin-module
 
 > Check if a string matches the name of a Node.js builtin module
 

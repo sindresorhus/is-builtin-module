@@ -25,6 +25,7 @@ test('main', t => {
 	t.false(isBuiltinModule('fsnode:'));
 	t.false(isBuiltinModule('node:unknown'));
 	t.false(isBuiltinModule('node:node:fs'));
+	t.false(isBuiltinModule('node:/fs'));
 	t.false(isBuiltinModule('file:fs/promises'));
 	t.false(isBuiltinModule('data:text/javascript;utf-8,export {default} from "fs";'));
 });

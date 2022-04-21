@@ -1,4 +1,6 @@
+import {version} from 'process';
 import test from 'ava';
+import semver from 'semver';
 import isBuiltinModule from '.';
 
 test('main', t => {
@@ -28,4 +30,8 @@ test('main', t => {
 	t.false(isBuiltinModule('node:/fs'));
 	t.false(isBuiltinModule('file:fs/promises'));
 	t.false(isBuiltinModule('data:text/javascript;utf-8,export {default} from "fs";'));
+
+	if (semver.gte(version, '18.0.0')) {
+		t.true(isBuiltinModule('node:test'));
+	}
 });

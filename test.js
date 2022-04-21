@@ -33,5 +33,6 @@ test('main', t => {
 
 	if (semver.gte(version, '18.0.0')) {
 		t.true(isBuiltinModule('node:test'));
+		t.false(isBuiltinModule('test'));
 	}
 });

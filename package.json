@@ -4,6 +4,7 @@
 	"description": "Check if a string matches the name of a Node.js builtin module",
 	"license": "MIT",
 	"repository": "sindresorhus/is-builtin-module",
+	"funding": "https://github.com/sponsors/sindresorhus",
 	"author": {
 		"name": "Sindre Sorhus",
 		"email": "sindresorhus@gmail.com",
@@ -36,7 +37,7 @@
 		"match"
 	],
 	"dependencies": {
-		"builtin-modules": "^3.0.0"
+		"builtin-modules": "^3.3.0"
 	},
 	"devDependencies": {
 		"ava": "^0.25.0",

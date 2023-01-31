@@ -1,6 +1,6 @@
 {
 	"name": "is-builtin-module",
-	"version": "3.2.0",
+	"version": "3.2.1",
 	"description": "Check if a string matches the name of a Node.js builtin module",
 	"license": "MIT",
 	"repository": "sindresorhus/is-builtin-module",

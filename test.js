@@ -4,12 +4,12 @@ import isBuiltinModule from '.';
 test('main', t => {
 	t.true(isBuiltinModule('fs'));
 	t.true(isBuiltinModule('console'));
+	t.true(isBuiltinModule('punycode'));
 
 	t.true(isBuiltinModule('fs/promises'));
 	t.true(isBuiltinModule('assert/strict'));
 
 	// These are actually not, but should not exist
-	t.true(isBuiltinModule('fs/'));
 	t.true(isBuiltinModule('fs/unknown'));
 	t.true(isBuiltinModule('fs/promises/unknown'));
 	t.true(isBuiltinModule('fs/promises?query=1'));
@@ -17,6 +17,7 @@ test('main', t => {
 	t.true(isBuiltinModule('node:fs'));
 	t.true(isBuiltinModule('node:fs/promises'));
 
+	t.false(isBuiltinModule('punycode/'));
 	t.false(isBuiltinModule('unicorn'));
 	t.false(isBuiltinModule('unknown'));
 	t.false(isBuiltinModule('FS'));

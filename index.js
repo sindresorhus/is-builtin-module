@@ -14,7 +14,7 @@ module.exports = moduleName => {
 	}
 
 	const slashIndex = moduleName.indexOf('/');
-	if (slashIndex !== -1) {
+	if (slashIndex !== -1 && slashIndex !== moduleName.length - 1) {
 		moduleName = moduleName.slice(0, slashIndex);
 	}
 

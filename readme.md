@@ -2,18 +2,18 @@
 
 > Check if a string matches the name of a Node.js builtin module
 
+Note that this matches based a [static list of modules](https://github.com/sindresorhus/builtin-modules) from the latest Node.js version. If you want to check for a module in the current Node.js, use the core [`isBuiltin`](https://nodejs.org/api/module.html#moduleisbuiltinmodulename) method.
 
 ## Install
 
+```sh
+npm install is-builtin-module
 ```
-$ npm install is-builtin-module
-```
-
 
 ## Usage
 
 ```js
-const isBuiltinModule = require('is-builtin-module');
+import isBuiltinModule from 'is-builtin-module';
 
 isBuiltinModule('fs');
 //=> true
@@ -28,20 +28,6 @@ isBuiltinModule('unicorn');
 //=> false
 ```
 
-
 ## Related
 
-- [builtin-modules](https://github.com/sindresorhus/builtin-modules) - List of the Node.js builtin modules
-
-
----
-
-<div align="center">
-	<b>
-		<a href="https://tidelift.com/subscription/pkg/npm-is-builtin-module?utm_source=npm-is-builtin-module&utm_medium=referral&utm_campaign=readme">Get professional support for this package with a Tidelift subscription</a>
-	</b>
-	<br>
-	<sub>
-		Tidelift helps make open source sustainable for maintainers while giving companies<br>assurances about security, maintenance, and licensing for their dependencies.
-	</sub>
-</div>
+- [builtin-modules](https://github.com/sindresorhus/builtin-modules) - A static list of the Node.js builtin modules from the latest Node.js version

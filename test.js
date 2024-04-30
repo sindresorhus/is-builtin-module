@@ -1,5 +1,5 @@
 import test from 'ava';
-import isBuiltinModule from '.';
+import isBuiltinModule from './index.js';
 
 test('main', t => {
 	t.true(isBuiltinModule('fs'));
@@ -9,10 +9,9 @@ test('main', t => {
 	t.true(isBuiltinModule('fs/promises'));
 	t.true(isBuiltinModule('assert/strict'));
 
-	// These are actually not, but should not exist
-	t.true(isBuiltinModule('fs/unknown'));
-	t.true(isBuiltinModule('fs/promises/unknown'));
-	t.true(isBuiltinModule('fs/promises?query=1'));
+	t.false(isBuiltinModule('fs/unknown'));
+	t.false(isBuiltinModule('fs/promises/unknown'));
+	t.false(isBuiltinModule('fs/promises?query=1'));
 
 	t.true(isBuiltinModule('node:fs'));
 	t.true(isBuiltinModule('node:fs/promises'));

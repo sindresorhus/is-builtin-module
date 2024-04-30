@@ -1,5 +1,5 @@
 import {expectType, expectError} from 'tsd';
-import isBuiltinModule = require('.');
+import isBuiltinModule from './index.js';
 
 expectType<(moduleName: string) => boolean>(isBuiltinModule);
 expectError<() => boolean>(isBuiltinModule);

@@ -1,4 +1,4 @@
-import builtinModules from 'builtin-modules';
+import {builtinModules} from 'node:module';
 
 const moduleSet = new Set(builtinModules);
 const NODE_PROTOCOL = 'node:';

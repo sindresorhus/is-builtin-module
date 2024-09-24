@@ -42,9 +42,6 @@
 		"check",
 		"match"
 	],
-	"dependencies": {
-		"builtin-modules": "^4.0.0"
-	},
 	"devDependencies": {
 		"ava": "^6.1.2",
 		"tsd": "^0.31.0",

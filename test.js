@@ -22,6 +22,7 @@ test('main', t => {
 	t.false(isBuiltinModule('test'));
 
 	t.false(isBuiltinModule('punycode/'));
+	t.false(isBuiltinModule('fs/'));
 	t.false(isBuiltinModule('unicorn'));
 	t.false(isBuiltinModule('unknown'));
 	t.false(isBuiltinModule('FS'));

@@ -43,7 +43,7 @@
 		"match"
 	],
 	"dependencies": {
-		"builtin-modules": "^4.0.0"
+		"builtin-modules": "^5.0.0"
 	},
 	"devDependencies": {
 		"ava": "^6.1.2",

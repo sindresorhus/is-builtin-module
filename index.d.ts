@@ -9,10 +9,13 @@ This matches based a [static list of modules](https://github.com/sindresorhus/bu
 ```
 import isBuiltinModule from 'is-builtin-module';
 
+isBuiltinModule('fs');
+//=> true
+
 isBuiltinModule('fs/promises');
 //=> true
 
-isBuiltinModule('node:fs');
+isBuiltinModule('node:fs/promises');
 //=> true
 
 isBuiltinModule('unicorn');

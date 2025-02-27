@@ -4,6 +4,7 @@ import isBuiltinModule from './index.js';
 test('main', t => {
 	t.true(isBuiltinModule('fs'));
 	t.true(isBuiltinModule('console'));
+
 	// Deprecated
 	t.false(isBuiltinModule('punycode'));
 
@@ -18,6 +19,7 @@ test('main', t => {
 	t.true(isBuiltinModule('node:fs/promises'));
 
 	t.true(isBuiltinModule('node:test'));
+
 	// Only works with `node:` prefix
 	t.false(isBuiltinModule('test'));
 
